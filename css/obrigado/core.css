@@ -140,10 +140,10 @@ body {
   font-size: 2rem;
 }
 
-@font-face {
-  .main .descricao {
+ .main .descricao{
+  @font-face{
     font-family: Wishingly;
-    src: url("Wishingly.otf");
+    src:url(../partials/Wishingly.otf);
   }
 }
 
@@ -222,7 +222,7 @@ body {
 
 .sobrepor {
   text-align: center;
-  background-image: url("/public/img/continue1.png");
+  background-image: url("img/continue1.png");
   background-position: center;
   background-size: 41rem;
   background-repeat: no-repeat;
