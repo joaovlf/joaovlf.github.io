@@ -1,16 +1,24 @@
-.titulo {
+.titulo, .titulo2 {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 900;
   color: #DA23A7;
 }
 
-.subtitulo {
+.titulo2 {
+  color: #a5a5a5;
+}
+
+.subtitulo, .subtitulo2 {
   font-size: 2.5rem;
   color: #a5a5a5;
   font-weight: bold;
   text-align: center;
   margin: 0;
+}
+
+.subtitulo2 {
+  color: #000000;
 }
 
 .botao {
@@ -161,7 +169,7 @@ body {
           align-items: center;
 }
 
-.projeto .container .titulo p {
+.projeto .container .titulo p, .projeto .container .titulo2 p {
   font-weight: 800;
 }
 
@@ -232,7 +240,7 @@ h3 {
 }
 
 @media (max-width: 350px) {
-  .main .titulo {
+  .main .titulo, .main .titulo2 {
     font-size: 2.8rem;
   }
   .main .perfil img {
@@ -244,7 +252,7 @@ h3 {
   }
 }
 
-.titulo {
+.titulo, .titulo2 {
   font-size: 4.2rem;
   margin-bottom: 1%;
 }
@@ -295,7 +303,7 @@ h3 {
   margin-left: -5vw;
 }
 
-.sobrepor .titulo {
+.sobrepor .titulo, .sobrepor .titulo2 {
   color: #DA23A7;
   font-size: 3rem;
 }
@@ -328,7 +336,7 @@ h3 {
   .sobrepor h2 {
     margin-left: -6vw;
   }
-  .sobrepor .titulo {
+  .sobrepor .titulo, .sobrepor .titulo2 {
     font-size: 2.7rem;
   }
 }
