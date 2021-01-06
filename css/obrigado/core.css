@@ -34,6 +34,11 @@
 .botao:hover {
   background-image: -webkit-gradient(linear, right top, left top, from(#DA23A7), to(#DA23A7));
   background-image: linear-gradient(right, #DA23A7, #DA23A7);
+  cursor: pointer;
+}
+
+.botao:focus {
+  outline: none;
 }
 
 span {
@@ -42,6 +47,21 @@ span {
 
 small {
   font-size: 1.8rem;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: "Wishingly";
+  src: url("../../fonts/Wishingly.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../../fonts/Caveat-Bold.ttf");
 }
 
 html, body {
@@ -53,6 +73,7 @@ html, body {
 }
 
 body {
+  font-family: "Raleway";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +85,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fffffb;
-  font-family: 'Raleway', sans-serif;
 }
 
 @media (max-width: 350px) {
@@ -119,78 +139,108 @@ body {
 .main img {
   width: 50vw;
   max-height: 400px;
-  max-width: 800px;
+  max-width: 600px;
 }
 
-.main .projeto {
+.projeto {
   background-image: -webkit-gradient(linear, left top, right top, from(#cccccc), to(#f1eeee));
   background-image: linear-gradient(left, #cccccc, #f1eeee);
   border-radius: 0.5rem;
-  padding-bottom: 2%;
   width: 100%;
-  text-align: center;
 }
 
-.main .projeto .titulo p {
-  font-weight: 800;
-}
-
-.main .descricao {
-  color: white;
-  font-size: 2rem;
-}
-
- .main .descricao{
-  @font-face{
-    font-family: Wishingly;
-    src:url(../partials/Wishingly.otf);
-  }
-}
-
-.main .perfil {
+.projeto .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main .perfil img {
-  margin-right: 3%;
-  width: 20%;
-  height: 20%;
-  border-radius: 48%;
+.projeto .container .titulo p {
+  font-weight: 800;
 }
 
-.main small {
+.projeto .container .descricao {
+  font-family: "Caveat";
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+.projeto .container .tape {
+  width: 3vw;
+  height: 6vh;
+  max-width: 65px;
+  max-height: 65px;
+  min-width: 50px;
+}
+
+.projeto .container .music {
+  width: 3vw;
+  height: 6vh;
+  max-width: 65px;
+  max-height: 65px;
+  min-width: 50px;
+}
+
+.perfil {
+  text-align: center;
+}
+
+.perfil img {
+  width: 25%;
+}
+
+.perfil p {
+  margin: 0 auto;
+  width: 60%;
+  min-width: 450px;
+  text-align: left;
+}
+
+small {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
 }
 
-.main h3 {
+h3 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .main {
     width: 95%;
   }
   .main img {
     width: 100%;
   }
+  .perfil img {
+    margin-right: none;
+    width: 45vw;
+  }
+  .perfil p {
+    min-width: 90%;
+  }
 }
 
 @media (max-width: 350px) {
   .main .titulo {
     font-size: 2.8rem;
+  }
+  .main .perfil img {
+    margin-right: none;
+    width: 45vw;
+  }
+  .main .perfil p {
+    width: 90%;
   }
 }
 
@@ -207,35 +257,68 @@ body {
   list-style: none;
 }
 
+.projeto p {
+  margin-left: 1%;
+}
+
 .projeto li {
-  text-align: left;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projeto li p {
   font-size: 2rem;
-  margin-top: 1%;
   font-weight: 800;
-  color: black;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .projeto li img {
-  width: 1.5vw;
-  margin-right: 0.5rem;
+  width: 3vw;
+  max-width: 30px;
 }
 
 .sobrepor {
   text-align: center;
-  background-image: url("../../img/continue1.png");
+  background-image: url("../../img/continue2.png");
   background-position: center;
-  background-size: 41rem;
+  background-size: 45rem;
   background-repeat: no-repeat;
   text-align: center;
   width: 100%;
 }
 
 .sobrepor h2 {
-  margin-left: -6vw;
+  margin-left: -5vw;
 }
 
 .sobrepor .titulo {
-  color: white;
-  font-size: 2.7rem;
+  color: #DA23A7;
+  font-size: 3rem;
+}
+
+@media (max-width: 700px) {
+  .projeto {
+    padding: 3%;
+  }
+  .projeto li {
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projeto li p {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 1%;
+    margin-right: 0.5%;
+  }
+  .projeto li img {
+    width: 5vw;
+  }
 }
 /*# sourceMappingURL=core.css.map */
