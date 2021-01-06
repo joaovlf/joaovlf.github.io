@@ -87,9 +87,9 @@ body {
   background-color: #fffffb;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   html, body {
-    font-size: 50%;
+    font-size: 48%;
   }
 }
 
@@ -217,7 +217,7 @@ h3 {
 
 @media (max-width: 768px) {
   .main {
-    width: 95%;
+    width: 85%;
   }
   .main img {
     width: 100%;
