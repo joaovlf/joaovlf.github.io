@@ -57,6 +57,13 @@ small {
   font-size: 1.8rem;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
 @font-face {
   font-family: "Raleway";
   src: url("../../fonts/Raleway-Light.ttf");
